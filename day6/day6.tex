@@ -1,0 +1,35 @@
+\documentclass[a4paper, 10pt]{scrartcl}
+
+\usepackage[latin1]{inputenc}
+
+\begin{document}
+
+\section{Exercise 66.2}
+
+\[f(x) = \cos{8x}\sin{2x}\]
+
+Using:
+\[\cos{\alpha}\sin{\beta} = \frac{1}{2}(\sin{(\alpha + \beta)} - \sin{(\alpha - \beta)})\]
+
+\[f(x) = \frac{1}{2}(\sin{(8x + 2x)} - \sin{(8x - 2x)})\]
+\[f(x) = \frac{1}{2}(\sin{10x} - \sin{6x})\]
+
+Result:
+\[f(x) = \cos{8x}\sin{2x} = \frac{1}{2}(\sin{10x} - \sin{6x})\]
+
+\section{Exercise 66.3}
+
+\[f(t) = 2\sin{7t}\sin{3t}\]
+
+Using:
+\[\sin{\alpha}\sin{\beta} = -\frac{1}{2}(\cos{(\alpha + \beta)} - \cos{(\alpha - \beta)})\]
+
+\[f(t) = 2\left(-\frac{1}{2}(\cos{(7t + 3t)} - \cos{(7t - 3t)})\right)\]
+\[f(t) = 2\left(-\frac{1}{2}(\cos{10t} - \cos{4t})\right)\]
+\[f(t) = -(\cos{10t} - \cos{4t})\]
+\[f(t) = -\cos{10t} + \cos{4t} = \cos{4t} - \cos{10t}\]
+
+Result:
+\[f(t) = 2\sin{7t}\sin{3t} = \cos{4t} - \cos{10t}\]
+
+\end{document}
