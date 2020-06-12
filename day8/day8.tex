@@ -6,10 +6,21 @@
 
 \section{Exercise 66.6}
 
-\[f(t) = 2\sin{3t}\cos{t}\]
+\[f(t) = \int{2\sin{3t}\cos{t}\,dt}\]
 
 Using:
+\[\sin{\alpha}\cos{\beta} = \frac{1}{2}(\sin{(\alpha + \beta)} + \sin{(\alpha - \beta)})\]
+
+\[f(t) = \int{2\left(\frac{1}{2}(\sin{(3t + t)} + \sin{(3t - t)})\right)\,dt}\]
+\[f(t) = \int{2\left(\frac{1}{2}(\sin{4t} + \sin{2t})\right)\,dt}\]
+\[f(t) = \int{(\sin{4t} + \sin{2t})\,dt}\]
+\[f(t) = \int{\sin{4t}\,dt} + \int{\sin{2t}\,dt}\]
+
+\[f(t) = (-\frac{1}{4}\cos{4t} + c_1) + (-\frac{1}{2}\cos{2t} + c_2)\]
+\[f(t) = -\frac{1}{4}\cos{4t} - \frac{1}{2}\cos{2t} + c\]
 
 Result:
+\[f(t) = \int{2\sin{3t}\cos{t}\,dt} =
+         -\frac{1}{4}\cos{4t} - \frac{1}{2}\cos{2t} + c\]
 
 \end{document}
