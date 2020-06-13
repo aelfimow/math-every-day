@@ -1,0 +1,35 @@
+\documentclass[a4paper, 10pt]{scrartcl}
+
+\usepackage[latin1]{inputenc}
+
+\begin{document}
+
+\section{Exercise 66.7}
+
+\[f(x) = \int_{0}^{\frac{\pi}{2}}{4\cos{5x}\cos{2x}\,dx}\]
+
+Using:
+\[\cos{\alpha}\cos{\beta} = \frac{1}{2}(\cos{(\alpha + \beta)} + \cos{(\alpha - \beta)})\]
+
+\[f(x) = \int_{0}^{\frac{\pi}{2}}{4\left(\frac{1}{2}(\cos{(5x + 2x)} + \cos{(5x - 2x)})\right)\,dx}\]
+\[f(x) = \int_{0}^{\frac{\pi}{2}}{4\left(\frac{1}{2}(\cos{7x} + \cos{3x})\right)\,dx}\]
+\[f(x) = \int_{0}^{\frac{\pi}{2}}{2(\cos{7x} + \cos{3x})\,dx}\]
+\[f(x) = 2\int_{0}^{\frac{\pi}{2}}{(\cos{7x} + \cos{3x})\,dx}\]
+\[f(x) = 2\int_{0}^{\frac{\pi}{2}}{\cos{7x}\,dx} +
+         2\int_{0}^{\frac{\pi}{2}}{\cos{3x}\,dx}\]
+
+Using:
+\[f_0(x) = 2\int{\cos{7x}\,dx} = \frac{2}{7}\sin{7x} + c\]
+\[f_1(x) = 2\int{\cos{3x}\,dx} = \frac{2}{3}\sin{3x} + c\]
+
+\[f(x) = f_0(\frac{\pi}{2}) - f_0(0) + f_1(\frac{\pi}{2}) - f_1(0)\]
+\[f(x) = \frac{2}{7}\sin{\frac{7\pi}{2}} - \frac{2}{7}\sin{0} +
+         \frac{2}{3}\sin{\frac{3\pi}{2}} - \frac{2}{3}\sin{0}\]
+
+\[f(x) = \frac{2}{7}\sin{\frac{7\pi}{2}} +
+         \frac{2}{3}\sin{\frac{3\pi}{2}} = -0,9524\]
+
+Result:
+\[f(x) = \int_{0}^{\frac{\pi}{2}}{4\cos{5x}\cos{2x}\,dx} = -0,9524\]
+
+\end{document}
