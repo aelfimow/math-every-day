@@ -11,7 +11,30 @@ Given:
 \[V_{3} = 1\]
 
 Using:
+\[\cos{(\alpha + \beta)} = \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta}\]
 
 Solution:
+\[f(\theta) = V_{3}\cos{3\theta} = 1\cos{3\theta} = \cos{(\theta + 2\theta)}\]
+\[\cos{(\theta + 2\theta)} = \cos{\theta}\cos{2\theta} - \sin{\theta}\sin{2\theta}\]
+
+Using:
+\[\cos{2\alpha} = 2\cos^{2}{\alpha} - 1\]
+\[\sin{2\alpha} = 2\sin{\alpha}\cos{\alpha}\]
+
+\[\cos{\theta}\cos{2\theta} - \sin{\theta}\sin{2\theta} =
+\cos{\theta}(2\cos^{2}{\theta} - 1) - \sin{\theta}(2\sin{\theta}\cos{\theta})\]
+\[2\cos^{3}{\theta} - \cos{\theta} - 2\sin^{2}{\theta}\cos{\theta}\]
+
+Using:
+\[\sin^{2}{\alpha} + \cos^{2}{\alpha} = 1\]
+\[\sin^{2}{\alpha} = 1 - \cos^{2}{\alpha}\]
+
+\[2\cos^{3}{\theta} - \cos{\theta} - 2(1 - \cos^{2}{\theta})\cos{\theta}\]
+\[2\cos^{3}{\theta} - \cos{\theta} - 2(\cos{\theta} - \cos^{3}{\theta})\]
+\[2\cos^{3}{\theta} - \cos{\theta} - 2\cos{\theta} + 2\cos^{3}{\theta}\]
+\[4\cos^{3}{\theta} - 3\cos{\theta}\]
+
+Result:
+\[f(\theta) = V_{3}\cos{3\theta} = 4\cos^{3}{\theta} - 3\cos{\theta}\]
 
 \end{document}
