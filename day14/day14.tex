@@ -7,12 +7,36 @@
 \section{Exercise 64.1}
 
 Given:
-\[5\sin{\omega t} + 8\cos{\omega t}\]
+\[5\sin{\omega t} + 8\cos{\omega t} = R\sin{(\omega t + \alpha)}\]
 
 Using:
+\[\sin{(\alpha + \beta)} = \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\]
 
-Solution:
+Computation of $R$:
+\[R(\sin{\omega t}\cos{\alpha} + \cos{\omega t}\sin{\alpha})\]
+\[R\sin{\omega t}\cos{\alpha} + R\cos{\omega t}\sin{\alpha}\]
+\[R\cos{\alpha}\sin{\omega t} + R\sin{\alpha}\cos{\omega t}\]
+
+\[R\cos{\alpha} = 5\]
+\[\cos{\alpha} = \frac{5}{R}\]
+
+\[R\sin{\alpha} = 8\]
+\[\sin{\alpha} = \frac{8}{R}\]
+
+\[\sin^{2}{\alpha} + \cos^{2}{\alpha} = 1\]
+\[\left(\frac{5}{R}\right)^{2} + \left(\frac{8}{R}\right)^{2} = 1\]
+\[\frac{5^{2}}{R^{2}} + \frac{8^{2}}{R^{2}} = 1\]
+\[5^{2} + 8^{2} = R^{2}\]
+\[R = \sqrt{5^{2} + 8^{2}} \approx 9,434\]
+
+Computation of $\alpha$:
+\[\tan{\alpha} = \frac{\sin{\alpha}}{\cos{\alpha}}\]
+\[\tan{\alpha} = \frac{\frac{8}{R}}{\frac{5}{R}}\]
+\[\tan{\alpha} = \frac{8}{5}\]
+\[\alpha = \arctan{\frac{8}{5}} \approx 57,995^\circ \approx 1,012\textnormal{ rad}\]
 
 Result:
+\[5\sin{\omega t} + 8\cos{\omega t} = R\sin{(\omega t + \alpha)} \approx
+9,434\sin{(\omega t + 1,012)}\]
 
 \end{document}
