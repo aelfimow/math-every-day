@@ -13,9 +13,31 @@ Using:
 \[\sin{(\alpha + \beta)} = \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\]
 
 Computation of $R$:
+\[R\sin{(\omega t + \alpha)} =
+R(\sin{\omega t}\cos{\alpha} + \cos{\omega t}\sin{\alpha})\]
+\[R\sin{\omega t}\cos{\alpha} + R\cos{\omega t}\sin{\alpha}\]
+\[R\cos{\alpha}\sin{\omega t} + R\sin{\alpha}\cos{\omega t}\]
+
+\[R\cos{\alpha} = 4\]
+\[\cos{\alpha} = \frac{4}{R}\]
+
+\[R\sin{\alpha} = -3\]
+\[\sin{\alpha} = \frac{-3}{R}\]
+
+\[\sin^{2}{\alpha} + \cos^{2}{\alpha} = 1\]
+\[\left(\frac{-3}{R}\right)^{2} + \left(\frac{4}{R}\right)^{2} = 1\]
+\[\frac{(-3)^{2}}{R^{2}} + \frac{4^{2}}{R^{2}} = 1\]
+\[(-3)^{2} + 4^{2} = R^{2}\]
+\[R = \sqrt{(-3)^{2} + 4^{2}} = 5\]
 
 Computation of $\alpha$:
+\[\tan{\alpha} = \frac{\sin{\alpha}}{\cos{\alpha}}\]
+\[\tan{\alpha} = \frac{\frac{-3}{R}}{\frac{4}{R}}\]
+\[\tan{\alpha} = \frac{-3}{4}\]
+\[\alpha = \arctan{\frac{-3}{4}} \approx -36,8699^\circ \approx -0,6435\textnormal{ rad}\]
 
 Result:
+\[4\sin{\omega t} - 3\cos{\omega t} = R\sin{(\omega t + \alpha)} \approx
+5\sin{(\omega t - 0,6435)}\]
 
 \end{document}
