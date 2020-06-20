@@ -1,0 +1,40 @@
+\documentclass[a4paper, 10pt]{scrartcl}
+
+\usepackage[latin1]{inputenc}
+
+\begin{document}
+
+\section{Exercise 64.3}
+
+Given:
+\[-7\sin{\omega t} + 4\cos{\omega t} = R\sin{(\omega t + \alpha)}\]
+
+Using:
+\[\sin{(\alpha + \beta)} = \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\]
+
+Computation of $R$:
+\[R\sin{(\omega t + \alpha)} =
+R(\sin{\omega t}\cos{\alpha} + \cos{\omega t}\sin{\alpha})\]
+\[R\sin{\omega t}\cos{\alpha} + R\cos{\omega t}\sin{\alpha}\]
+\[R\cos{\alpha}\sin{\omega t} + R\sin{\alpha}\cos{\omega t}\]
+
+\[R\cos{\alpha} = -7\]
+\[\cos{\alpha} = \frac{-7}{R}\]
+
+\[R\sin{\alpha} = 4\]
+\[\sin{\alpha} = \frac{4}{R}\]
+
+\[\sin^{2}{\alpha} + \cos^{2}{\alpha} = 1\]
+\[\left(\frac{4}{R}\right)^{2} + \left(\frac{-7}{R}\right)^{2} = 1\]
+\[\frac{(4)^{2}}{R^{2}} + \frac{(-7)^{2}}{R^{2}} = 1\]
+\[(4)^{2} + (-7)^{2} = R^{2}\]
+\[R = \sqrt{4^{2} + (-7)^{2}} \approx 8,0622\]
+
+Computation of $\alpha$:
+\[\alpha = 180^\circ - \arctan{\frac{4}{7}} \approx 150,255^\circ \approx 2.622 \textnormal{ rad}\]
+
+Result:
+\[-7\sin{\omega t} + 4\cos{\omega t} = R\sin{(\omega t + \alpha)} \approx
+8,0622\sin{(\omega t + 2,622)}\]
+
+\end{document}
