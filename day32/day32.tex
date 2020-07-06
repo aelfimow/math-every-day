@@ -7,9 +7,28 @@
 \section{Exercise 69.5}
 
 Given:
+\[f(t) = e^{t}\ln{t}\cos{t}\]
 
 Solution:
+\[u(t) = e^{t}\ln{t}\]
+\[u_{0}(t) = e^{t}\]
+\[u_{0}'(t) = e^{t}\]
+\[v_{0}(t) = \ln{t}\]
+\[v_{0}'(t) = \frac{1}{t}\]
+\[u'(t) = u_{0}(t)v_{0}'(t) + u_{0}'(t)v_{0}(t) =
+          e^{t}\frac{1}{t} + e^{t}\ln{t} =
+          e^{t}(\frac{1}{t} + \ln{t})\]
+
+\[v(t) = \cos{t}\]
+\[v'(t) = -\sin{t}\]
+
+\[f'(t) = u(t)v'(t) + u'(t)v(t) = e^{t}\ln{t}(-\sin{t}) + e^{t}(\frac{1}{t} + \ln{t})\cos{t}\]
+\[f'(t) = e^{t}(\frac{1}{t} + \ln{t})\cos{t} - e^{t}\ln{t}\sin{t}\]
+\[f'(t) = e^{t}\left((\frac{1}{t} + \ln{t})\cos{t} - \ln{t}\sin{t}\right)\]
+\[f'(t) = e^{t}\left(\frac{\cos{t}}{t} + \ln{t}\cos{t} - \ln{t}\sin{t}\right)\]
+\[f'(t) = e^{t}\left(\frac{\cos{t}}{t} + \ln{t}(\cos{t} - \sin{t})\right)\]
 
 Result:
+\[f'(t) = e^{t}\left(\frac{\cos{t}}{t} + \ln{t}(\cos{t} - \sin{t})\right)\]
 
 \end{document}
