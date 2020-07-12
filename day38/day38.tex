@@ -7,9 +7,28 @@
 \section{Exercise 1}
 
 Given:
+\[f(x) = x^{n}\cos{ax}\ln{x}\]
 
 Solution:
+\[u(x) = x^{n}\cos{ax}\]
+\[u_{0}(x) = x^{n}\]
+\[u'_{0}(x) = nx^{n - 1}\]
+\[v_{0}(x) = \cos{ax}\]
+\[v'_{0}(x) = a(-\sin{ax}) = -a\sin{ax}\]
+\[u'(x) = x^{n}(-a\sin{ax}) + nx^{n - 1}\cos{ax}\]
+\[u'(x) = -ax^{n}\sin{ax} + nx^{n - 1}\cos{ax}\]
+\[u'(x) = x^{n - 1}(-ax\sin{ax} + n\cos{ax})\]
+\[u'(x) = x^{n - 1}(-ax\sin{ax} + n\cos{ax}) = x^{n - 1}(n\cos{ax} - ax\sin{ax})\]
+
+\[v(x) = \ln{x}\]
+\[v'(x) = \frac{1}{x}\]
+
+\[f'(x) = x^{n}\cos{ax}\frac{1}{x} + x^{n - 1}(n\cos{ax} - ax\sin{ax})\ln{x}\]
+\[f'(x) = x^{n - 1}\cos{ax} + x^{n - 1}(n\cos{ax} - ax\sin{ax})\ln{x}\]
+\[f'(x) = x^{n - 1}(\cos{ax} + (n\cos{ax} - ax\sin{ax})\ln{x})\]
+\[f'(x) = x^{n - 1}(\cos{ax} + n\cos{ax}\ln{x} - ax\sin{ax}\ln{x})\]
 
 Result:
+\[f'(x) = x^{n - 1}(\cos{ax} + n\cos{ax}\ln{x} - ax\sin{ax}\ln{x})\]
 
 \end{document}
