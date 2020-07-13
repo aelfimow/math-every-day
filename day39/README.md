@@ -1,2 +1,2 @@
 # Day 39
-Derivative f(x) = cot(x)
+Derivative of f(x) = cot(x) and f(x) = cot(ax)
