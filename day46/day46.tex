@@ -7,9 +7,38 @@
 \section{Exercise 36.8}
 
 Given:
+\[\lim_{\theta\to \frac{\pi}{2}}{\frac{\sin{\theta} - 1}{\ln{\sin{\theta}}}}\]
 
 Solution:
+\[u(\theta) = \sin{\theta} - 1\]
+\[u(\frac{\pi}{2}) = \sin{\frac{\pi}{2}} - 1 = 1 - 1 = 0\]
+
+\[v(\theta) = \ln{\sin{\theta}}\]
+\[v(\frac{\pi}{2}) = \ln{\sin{\frac{\pi}{2}}} = \ln{1} = 0\]
+
+\[u'(\theta) = \cos{\theta}\]
+\[u'(\frac{\pi}{2}) = \cos{\frac{\pi}{2}} = 0\]
+
+\[v'(\theta) = \cos{\theta}\frac{1}{\sin{\theta}} = \frac{\cos{\theta}}{\sin{\theta}}\]
+\[v'(\frac{\pi}{2}) = \frac{\cos{\frac{\pi}{2}}}{\sin{\frac{\pi}{2}}} = \frac{0}{1} = 0\]
+
+\[u''(\theta) = -\sin{\theta}\]
+\[u''(\frac{\pi}{2}) = -\sin{\frac{\pi}{2}} = -1\]
+
+\[v''(\theta) = \frac{\sin{\theta}(-\sin{\theta}) - \cos{\theta}\cos{\theta}}{\sin^{2}{\theta}}\]
+\[v''(\theta) = \frac{-\sin^{2}{\theta} - \cos^{2}{\theta}}{\sin^{2}{\theta}}\]
+\[v''(\theta) = \frac{-(\sin^{2}{\theta} + \cos^{2}{\theta})}{\sin^{2}{\theta}}\]
+\[v''(\theta) = \frac{-1}{\sin^{2}{\theta}} = -\frac{1}{\sin^{2}{\theta}}\]
+\[v''(\frac{\pi}{2}) = -\frac{1}{\sin^{2}{\frac{\pi}{2}}} = -\frac{1}{1^{2}} = -1\]
+
+\[\lim_{\theta\to \frac{\pi}{2}}{\frac{\sin{\theta} - 1}{\ln{\sin{\theta}}}} =
+  \lim_{\theta\to \frac{\pi}{2}}{\frac{u'(\theta)}{v'(\theta)}}\]
+
+\[\lim_{\theta\to \frac{\pi}{2}}{\frac{u'(\theta)}{v'(\theta)}} =
+  \lim_{\theta\to \frac{\pi}{2}}{\frac{u''(\theta)}{v''(\theta)}} =
+  \frac{-1}{-1} = 1\]
 
 Result:
+\[\lim_{\theta\to \frac{\pi}{2}}{\frac{\sin{\theta} - 1}{\ln{\sin{\theta}}}} = 1\]
 
 \end{document}
