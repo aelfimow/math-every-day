@@ -7,10 +7,36 @@
 \section{Exercise 766}
 
 Given:
-\[\]
+\[\lim_{x\to 0}{\frac{\sin^{2}{\frac{x}{2}}}{x^{2}}}\]
 
 Solution:
+\[u(x) = \sin^{2}{\frac{x}{2}}\]
+\[u'(x) = 2\sin^{2-1}{\frac{x}{2}}\cos{\frac{x}{2}}\frac{1}{2} =
+          2\frac{1}{2}\sin{\frac{x}{2}}\cos{\frac{x}{2}}\]
+\[u'(x) = \sin{\frac{x}{2}}\cos{\frac{x}{2}}\]
+\[u'(0) = \sin{\frac{0}{2}}\cos{\frac{0}{2}} = 0\cdot 1 = 0\]
+
+\[v(x) = x^{2}\]
+\[v'(x) = 2x^{2-1} = 2x\]
+\[v'(0) = 2\cdot 0 = 0\]
+
+\[u'(x) = \sin{\frac{x}{2}}\cos{\frac{x}{2}}\]
+\[u''(x) = \sin{\frac{x}{2}}(-\frac{1}{2}\sin{\frac{x}{2}}) +
+           \frac{1}{2}\cos{\frac{x}{2}}\cos{\frac{x}{2}}\]
+
+\[u''(x) = -\frac{1}{2}\sin^{2}{\frac{x}{2}} + \frac{1}{2}\cos^{2}{\frac{x}{2}}\]
+\[u''(0) = -\frac{1}{2}\sin^{2}{\frac{0}{2}} + \frac{1}{2}\cos^{2}{\frac{0}{2}} =
+           -\frac{1}{2}\cdot 0 + \frac{1}{2}\cdot 1 = \frac{1}{2}\]
+
+\[v'(x) = 2x\]
+\[v''(x) = 2\]
+\[v''(0) = 2\]
+
+\[\lim_{x\to 0}{\frac{\sin^{2}{\frac{x}{2}}}{x^{2}}} = \lim_{x\to 0}{\frac{u'(x)}{v'(x)}}\]
+\[\lim_{x\to 0}{\frac{u'(x)}{v'(x)}} = \lim_{x\to 0}{\frac{u''(x)}{v''(x)}} =
+  \frac{\frac{1}{2}}{2} = \frac{1}{4}\]
 
 Result:
+\[\lim_{x\to 0}{\frac{\sin^{2}{\frac{x}{2}}}{x^{2}}} = \frac{1}{4}\]
 
 \end{document}
