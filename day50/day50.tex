@@ -7,25 +7,32 @@
 \section{Exercise 767}
 
 Given:
+\[\lim_{x\to 0}{\frac{1 - \cos{2x}}{x\sin{x}}}\]
 
 Solution:
+\[u(x) = 1 - \cos{2x}\]
+\[u(0) = 1 - \cos{2\cdot 0} = 1 - \cos{0} = 1 - 1 = 0\]
+
+\[v(x) = x\sin{x}\]
+\[v(0) = 0\sin{0} = 0\]
+
+\[u'(x) = 0 - (-2\sin{2x}) = 2\sin{2x}\]
+\[u'(0) = 2\sin{2\cdot 0} = 2\sin{0} = 2\cdot 0 = 0\]
+
+\[v'(x) = x\cos{x} + \sin{x}\]
+\[v'(0) = 0\cos{0} + \sin{0} = 0 + 0 = 0\]
+
+\[u''(x) = 2\cdot 2\cos{2x} = 4\cos{2x}\]
+\[u''(0) = 4\cos{2\cdot 0} = 4\cdot 1 = 4\]
+
+\[v''(x) = x(-\sin{x}) + \cos{x} + \cos{x} = -x\sin{x} + 2\cos{x} = 2\cos{x} - x\sin{x}\]
+\[v''(0) = 2\cos{0} - 0\sin{0} = 2\cdot 1 - 0 = 2 - 0 = 2\]
+
+\[\lim_{x\to 0}{\frac{1 - \cos{2x}}{x\sin{x}}} = \lim_{x\to 0}{\frac{u'(x)}{v'(x)}}\]
+\[\lim_{x\to 0}{\frac{u'(x)}{v'(x)}} = \lim_{x\to 0}{\frac{u''(x)}{v''(x)}} =
+\frac{4}{2} = 2\]
 
 Result:
-
-\section{Exercise 768}
-
-Given:
-
-Solution:
-
-Result:
-
-\section{Exercise 769}
-
-Given:
-
-Solution:
-
-Result:
+\[\lim_{x\to 0}{\frac{1 - \cos{2x}}{x\sin{x}}} = 2\]
 
 \end{document}
