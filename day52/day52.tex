@@ -7,10 +7,25 @@
 \section{Exercise 769}
 
 Given:
-\[\lim_{h\to 0}{\frac{\sin{x + h} - \sin{x - h}}{h}}\]
+\[\lim_{h\to 0}{\frac{\sin{(x + h)} - \sin{(x - h)}}{h}}\]
 
 Solution:
+\[u(h) = \sin{(x + h)} - \sin{(x - h)}\]
+\[u(0) = \sin{(x + 0)} - \sin{(x - 0)} = \sin{x} - \sin{x} = 0\]
+
+\[v(h) = h\]
+\[v(0) = 0\]
+
+\[u'(h) = \cos{(x + h)} - (-\cos{(x - h)}) = \cos{(x + h)} + \cos{(x - h)}\]
+\[u'(0) = \cos{(x + 0)} + \cos{(x - 0)} = \cos{x} + \cos{x} = 2\cos{x}\]
+
+\[v'(h) = 1\]
+\[v'(0) = 1\]
+
+\[\lim_{h\to 0}{\frac{\sin{(x + h)} - \sin{(x - h)}}{h}} = \lim_{h\to 0}{\frac{u'(h)}{v'(h)}} =
+\frac{2\cos{x}}{1} = 2\cos{x}\]
 
 Result:
+\[\lim_{h\to 0}{\frac{\sin{(x + h)} - \sin{(x - h)}}{h}} = 2\cos{x}\]
 
 \end{document}
