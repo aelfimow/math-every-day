@@ -18,7 +18,40 @@ Given:
 \]
 
 Solution:
+\[
+\left|
+    \begin{array}{ccc}
+        x^{2} & x & 1\\
+        y^{2} & y & 1\\
+        z^{2} & z & 1
+    \end{array}
+\right| = x^{2}y + xz^{2} + y^{2}z - z^{2}y - zx^{2} - y^{2}x
+\]
+
+\[
+x^{2}y + xz^{2} + y^{2}z - z^{2}y - zx^{2} - y^{2}x = x^{2}(y - z) + y^{2}(z - x) + z^{2}(x - y)
+\]
+
+\[
+x^{2}y + xz^{2} + y^{2}z - z^{2}y - zx^{2} - y^{2}x = y(x^{2} - z^{2}) + x(z^{2} - y^{2}) + z(y^{2} - x^{2})
+\]
+\[
+y(x - z)(x + z) + x(z - y)(z + y) + z(y - x)(y + x)
+\]
+
+\[
+(x - y)(y - z)(x - z) = (xy - xz - yy + yz)(x - z) = xxy - xxz - xyy + xyz - xyz + xzz + yyz - yzz
+\]
 
 Result:
+\[
+\left|
+    \begin{array}{ccc}
+        x^{2} & x & 1\\
+        y^{2} & y & 1\\
+        z^{2} & z & 1
+    \end{array}
+\right| =  y(x^{2} - z^{2}) + x(z^{2} - y^{2}) + z(y^{2} - x^{2})
+\]
 
 \end{document}
