@@ -10,12 +10,56 @@ Given:
 \[
 \left|
     \begin{array}{ccc}
+    2\cos^{2}{\frac{\alpha}{2}} & \sin{\alpha} & 1\\
+    2\cos^{2}{\frac{\beta}{2}} & \sin{\beta} & 1\\
+    1 & 0 & 1
     \end{array}
 \right|
 \]
 
 Solution:
+\[
+2\cos^{2}{\frac{\alpha}{2}}\cdot\sin{\beta}\cdot1 + \sin{\alpha}\cdot1\cdot1 + 1\cdot2\cos^{2}{\frac{\beta}{2}}\cdot0 =
+\]
+\[
+2\cos^{2}{\frac{\alpha}{2}}\cdot\sin{\beta} + \sin{\alpha}
+\]
+
+\[
+-(1\cdot\sin{\beta}\cdot1 + 0\cdot1\cdot2\cos^{2}{\frac{\alpha}{2}} + 1\cdot2\cos^{2}{\frac{\beta}{2}\sin{\alpha}}) =
+\]
+\[
+-(\sin{\beta} + 2\cos^{2}{\frac{\beta}{2}\sin{\alpha}})
+\]
+
+\[
+2\cos^{2}{\frac{\alpha}{2}}\cdot\sin{\beta} + \sin{\alpha} - (\sin{\beta} + 2\cos^{2}{\frac{\beta}{2}\sin{\alpha}}) =
+\]
+\[
+2\cos^{2}{\frac{\alpha}{2}}\cdot\sin{\beta} + \sin{\alpha} - \sin{\beta} - 2\cos^{2}{\frac{\beta}{2}\sin{\alpha}} =
+\]
+\[
+\sin{\beta}(2\cos^{2}{\frac{\alpha}{2}} - 1) - \sin{\alpha}(2\cos^{2}{\frac{\beta}{2}} - 1)
+\]
+
+Using: $\cos{2\alpha} = 2\cos^{2}{\alpha} - 1$
+
+\[
+\sin{\beta}\cos{(2\frac{\alpha}{2})} - \sin{\alpha}\cos{(2\frac{\beta}{2})} =
+\]
+\[
+\sin{\beta}\cos{\alpha} - \sin{\alpha}\cos{\beta} = \sin{(\beta - \alpha)}
+\]
 
 Result:
+\[
+\left|
+    \begin{array}{ccc}
+    2\cos^{2}{\frac{\alpha}{2}} & \sin{\alpha} & 1\\
+    2\cos^{2}{\frac{\beta}{2}} & \sin{\beta} & 1\\
+    1 & 0 & 1
+    \end{array}
+\right| = \sin{(\beta - \alpha)}
+\]
 
 \end{document}
