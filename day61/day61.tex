@@ -10,12 +10,80 @@ Given:
 \[
 \left|
     \begin{array}{ccc}
+    ax & a^{2} + x^{2} & 1\\
+    ay & a^{2} + y^{2} & 1\\
+    az & a^{2} + z^{2} & 1
     \end{array}
 \right|
 \]
 
 Solution:
+\[
+ax(a^{2} + y^{2})1 = a^{3}x + axy^{2}
+\]
+\[
+(a^{2} + x^{2})az\cdot1 = a^{3}z + ax^{2}z
+\]
+\[
+1\cdot ay(a^{2} + z^{2}) = a^{3}y + ayz^{2}
+\]
+\[
+az(a^{2} + y^{2})1 = a^{3}z + ay{2}z
+\]
+\[
+(a^{2} + z^{2})\cdot 1 ax = a^{3}x + axz^{2}
+\]
+\[
+1ay(a^{2} + x^{2}) = a^{3}y + ax^{2}y
+\]
+\\
+\\
+\[
+a^{3}x + axy^{2} + a^{3}z + ax^{2}z + a^{3}y + ayz^{2} -
+\]
+\[
+(a^{3}z + ay{2}z + a^{3}x + axz^{2} + a^{3}y + ax^{2}y)
+\]
+\\
+\\
+\[
+a^{3}x + axy^{2} + a^{3}z + ax^{2}z + a^{3}y + ayz^{2} -
+\]
+\[
+a^{3}z - ay{2}z - a^{3}x - axz^{2} - a^{3}y - ax^{2}y
+\]
+\\
+\\
+\[
+axy^{2} + ax^{2}z + ayz^{2} - ay{2}z - axz^{2} - ax^{2}y =
+\]
+\[
+a(x - z)(y - z)(y - x)
+\]
+
+Probe:
+\[
+a(x - z)(y - z)(y - x) =
+\]
+\[
+a(xy - xz - yz + z^{2})(y - x) =
+\]
+\[
+a(xy^{2} - xyz - y^{2}z + yz^{2} - x^{2}y + x^{2}z + xyz - xz^{2}) =
+\]
+\[
+a(xy^{2} - y^{2}z + yz^{2} - x^{2}y + x^{2}z - xz^{2})
+\]
 
 Result:
+\[
+\left|
+    \begin{array}{ccc}
+    ax & a^{2} + x^{2} & 1\\
+    ay & a^{2} + y^{2} & 1\\
+    az & a^{2} + z^{2} & 1
+    \end{array}
+\right| = a(x - z)(y - z)(y - x)
+\]
 
 \end{document}
