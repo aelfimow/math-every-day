@@ -12,7 +12,53 @@ Given:
 \]
 
 Solution:
+\[
+u(x) = x\sin{2x}
+\]
+\[
+u'(x) = \sin{2x} + x2\cos{2x} = \sin{2x} + 2x\cos{2x}
+\]
+\[
+u'(0) = \sin{2\cdot 0} + 2\cdot 0\cos{2\cdot 0} = \sin{0} + 0 = 0
+\]
+
+\[
+v(x) = 1 - \cos{x}
+\]
+\[
+v'(x) = 0 - (-\sin{x}) = \sin{x}
+\]
+\[
+v'(0) = \sin{0} = 0
+\]
+
+\[
+u'(x) = \sin{2x} + 2x\cos{2x}
+\]
+\[
+u''(x) = 2\cos{2x} + 2\cos{2x} + 2x(-2\sin{2x}) = 4\cos{2x} - 4x\sin{2x}
+\]
+\[
+u''(0) = 4\cos{2\cdot 0} - 4\cdot 0\sin{2\cdot 0} = 4\cos{0} - 0 = 4
+\]
+
+\[
+v'(x) = \sin{x}
+\]
+\[
+v''(x) = \cos{x}
+\]
+\[
+v''(0) = \cos{0} = 1
+\]
+
+\[
+\lim_{x\to 0}{\frac{x\sin{2x}}{1 - \cos{x}}} = \lim_{x\to 0}{u'(x)}{v'(x)} = \lim_{x\to 0}{u''(x)}{v''(x)} = \frac{4}{1} = 4
+\]
 
 Result:
+\[
+\lim_{x\to 0}{\frac{x\sin{2x}}{1 - \cos{x}}} = 4
+\]
 
 \end{document}
