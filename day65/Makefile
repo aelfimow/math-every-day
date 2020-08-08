@@ -1,2 +1,2 @@
 all:
-	pdflatex day64.tex
+	pdflatex day65.tex
