@@ -12,7 +12,54 @@ Given:
 \]
 
 Solution:
+\[
+u(x) = 1 - \cos{mx}
+\]
+\[
+u'(x) = 0 - (-m\sin{mx}) = m\sin{mx}
+\]
+\[
+u'(0) = m\sin{m\cdot 0} = m\sin{0} = m\cdot 0 = 0
+\]
+
+\[
+v(x) = x^{2}
+\]
+\[
+v'(x) = 2x^{2 - 1} = 2x^{1} = 2x
+\]
+\[
+v'(0) = 2\cdot 0 = 0
+\]
+
+\[
+u'(x) = m\sin{mx}
+\]
+\[
+u''(x) = m(m\cos{mx}) = m^{2}\cos{mx}
+\]
+\[
+u''(0) = m^{2}\cos{m\cdot 0} = m^{2}
+\]
+
+\[
+v'(x) = 2x
+\]
+\[
+v''(x) = 2
+\]
+\[
+v''(0) = 2
+\]
+
+\[
+\lim_{x\to 0}{\frac{1 - \cos{mx}}{x^{2}}} = \lim_{x\to 0}{\frac{u'(x)}{v'(x)}} = \lim_{x\to 0}{\frac{u''(x)}{v''(x)}}
+= \frac{m^{2}}{2}
+\]
 
 Result:
+\[
+\lim_{x\to 0}{\frac{1 - \cos{mx}}{x^{2}}} = \frac{m^{2}}{2}
+\]
 
 \end{document}
