@@ -25,11 +25,54 @@ y' = -a\frac{\sin{2\phi}}{\sqrt{\cos{2\phi}}}
 
 Given:
 \[
-y = \sqrt{2\phi + \cos^{2}{2\phi + \frac{\pi}{4}}}
+y = \sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}
 \]
 
 Solution:
+\[
+y' = \frac{2 + 2\cdot2\cos{(2\phi + \frac{\pi}{4})}(-\sin{(2\phi + \frac{\pi}{4})})}{2\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}} =
+\]
+\[
+\frac{1 - 2\cos{(2\phi + \frac{\pi}{4})}\sin{(2\phi + \frac{\pi}{4})}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}}
+\]
+
+Using: $\sin{2\alpha} = 2\sin{\alpha}\cos{\alpha}$
+
+\[
+y' = \frac{1 - 2\cos{(2\phi + \frac{\pi}{4})}\sin{(2\phi + \frac{\pi}{4})}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}} =
+\]
+\[
+\frac{1 - \sin{(2(2\phi + \frac{\pi}{4}))}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}} =
+\]
+\[
+\frac{1 - \sin{(4\phi + \frac{\pi}{2})}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}}
+\]
+
+Using:
+\[
+\sin{(4\phi + \frac{\pi}{2})} = \sin{4\phi}\cos{\frac{\pi}{2}} + \cos{4\phi}\sin{\frac{\pi}{2}} =
+\]
+\[
+\sin{4\phi}\cdot0 + \cos{4\phi}\cdot1 = \cos{4\phi}
+\]
+
+\[
+y' = \frac{1 - \cos{4\phi}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}} =
+\frac{1 - \cos{(2\cdot2\phi)}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}} =
+\]
+\[
+\frac{2\cdot\frac{1}{2}(1 - \cos{(2\cdot2\phi)})}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}}
+\]
+
+Using: $\sin^{2}{\alpha} = \frac{1}{2}(1 - \cos{2\alpha})$
+
+\[
+y' = \frac{2\sin^{2}{2\phi}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}}
+\]
 
 Result:
+\[
+y' = \frac{2\sin^{2}{2\phi}}{\sqrt{2\phi + \cos^{2}{(2\phi + \frac{\pi}{4})}}}
+\]
 
 \end{document}
