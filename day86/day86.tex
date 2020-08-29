@@ -12,7 +12,43 @@ f(x) = \frac{(\sqrt{x} - 1)^{2}}{x}
 \]
 
 Solution:
+\[
+f'(x) = \frac{2(\sqrt{x} - 1)^{2 - 1}(\frac{1}{2\sqrt{x}} - 0)x - (\sqrt{x} - 1)^{2}\cdot1}{x^{2}} =
+\]
+\[
+\frac{(\sqrt{x} - 1)\frac{x}{\sqrt{x}} - ((\sqrt{x})^{2} - 2\sqrt{x} + 1)}{x^{2}}
+\]
+
+Using:
+\[
+\frac{x}{\sqrt{x}} = \frac{x\sqrt{x}}{\sqrt{x}\sqrt{x}} = \frac{x\sqrt{x}}{x} = \sqrt{x}
+\]
+
+\[
+f'(x) = \frac{(\sqrt{x} - 1)\frac{x}{\sqrt{x}} - ((\sqrt{x})^{2} - 2\sqrt{x} + 1)}{x^{2}} =
+\frac{(\sqrt{x} - 1)\sqrt{x} - (x - 2\sqrt{x} + 1)}{x^{2}} =
+\]
+\[
+\frac{\sqrt{x}\sqrt{x} - \sqrt{x} - x + 2\sqrt{x} - 1}{x^{2}} = \frac{x - \sqrt{x} - x + 2\sqrt{x} - 1}{x^{2}} = 
+\frac{\sqrt{x} - 1}{x^{2}}
+\]
+
+\[
+f'(x) = \frac{\sqrt{x} - 1}{x^{2}}
+\]
+
+\[
+f'(0.01) = \frac{\sqrt{0.01} - 1}{0.01^{2}} = \frac{\frac{1}{10} - 1}{\frac{1}{10000}} = 10000(\frac{1}{10} - 1) =
+1000 - 10000 = -9000
+\]
+
+\[
+0.01\cdot f'(0.01) = 0.01\cdot(-9000) = -90
+\]
 
 Result:
+\[
+0.01\cdot f'(0.01) = -90
+\]
 
 \end{document}
