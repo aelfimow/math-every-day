@@ -12,14 +12,36 @@ y = \frac{\cos{x}}{\sin^{2}{x}} + \ln{\tan{\frac{x}{2}}}
 \]
 
 Solution:
+\[
+y' = \frac{(-\sin{x})\sin^{2}{x} - \cos{x}\cdot 2\sin{x}\cos{x}}{(\sin^{2}{x})^{2}} +
+    \frac{1}{\tan{\frac{x}{2}}}\frac{1}{\cos^{2}{\frac{x}{2}}}\frac{1}{2}
+\]
+
+\[
+y' = \frac{-\sin^{3}{x} - 2\cos^{2}{x}\sin{x}}{\sin^{4}{x}} +
+    \frac{1}{2}\frac{\cos{\frac{x}{2}}}{\sin{\frac{x}{2}}}\frac{1}{\cos^{2}{\frac{x}{2}}}
+\]
+
+\[
+y' = -\frac{1}{\sin{x}} - 2\frac{\cos^{2}{x}}{\sin^{3}{x}} +
+    \frac{1}{2}\frac{1}{\sin{\frac{x}{2}}}\frac{1}{\cos{\frac{x}{2}}}
+\]
+
+\[
+y' = -\frac{1}{\sin{x}} - 2\frac{\cos^{2}{x}}{\sin^{3}{x}} +
+    \frac{1}{\sin{x}} = -2\frac{\cos^{2}{x}}{\sin^{3}{x}} = -2\frac{\cot^{2}{x}}{\sin{x}}
+\]
 
 Result:
+\[
+y' = -2\frac{\cot^{2}{x}}{\sin{x}}
+\]
 
 \section{Exercise 947b}
 
 Given:
 \[
-y = \ln{\frac{x^{2}}{\sqrt{1 - ax^{5}}}}
+y = \ln{\frac{x^{2}}{\sqrt{1 - ax^{4}}}}
 \]
 
 Solution:
