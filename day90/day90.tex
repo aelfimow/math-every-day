@@ -2,18 +2,29 @@
 
 \usepackage[latin1]{inputenc}
 
+\newcommand*\euler{\mathrm{e}}
+
 \begin{document}
 
 \section{Exercise 956a}
 
 Given:
 \[
-y = 
+y = \euler^{-x}(\sin{x} + \cos{x})
 \]
 
 Solution:
+\[
+y' = -\euler^{-x}(\sin{x} + \cos{x}) + \euler^{-x}(\cos{x} - \sin{x}) =
+\]
+\[
+\euler^{-x}(-\sin{x} - \cos{x} + \cos{x} - \sin{x}) = \euler^{-x}\cdot(-2\cdot\sin{x}) = -2\euler^{-x}\sin{x}
+\]
 
 Result:
+\[
+y' = -2\euler^{-x}\sin{x}
+\]
 
 \section{Exercise 956b}
 
