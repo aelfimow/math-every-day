@@ -30,11 +30,23 @@ y' = -2\euler^{-x}\sin{x}
 
 Given:
 \[
-y = 
+y = \ln{(\euler^{-x} + x\euler^{-x})}
 \]
 
 Solution:
+\[
+y' = \frac{1}{\euler^{-x} + x\euler^{-x}}\cdot\left(-\euler^{-x} + 1\euler^{-x} + x(-\euler^{-x})\right) =
+\]
+\[
+\frac{1}{\euler^{-x} + x\euler^{-x}}\cdot(-x\euler^{-x}) = -\frac{x}{\euler^{-x} + x\euler^{-x}}\cdot\euler^{-x} =
+\]
+\[
+-\frac{x}{\euler^{-x}(1 + x)}\cdot\euler^{-x} = -\frac{x}{1 + x}
+\]
 
 Result:
+\[
+y' = -\frac{x}{1 + x}
+\]
 
 \end{document}
