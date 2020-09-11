@@ -8,11 +8,36 @@
 
 Given:
 \[
-y = \ln{(\sqrt{} + \sqrt{}) + \sqrt{}
+y = 4\ln{(\sqrt{x - 4} + \sqrt{x})} + \sqrt{x^{2} - 4x}
 \]
 
 Solution:
+\[
+(\sqrt{x^{2} - 4x})' = \frac{1}{2\sqrt{x^{2} - 4x}}(2x - 4) = \frac{x - 2}{\sqrt{x^{2} - 4x}}
+\]
+\[
+(4\ln{(\sqrt{x - 4} + \sqrt{x})})' = 4\frac{1}{\sqrt{x - 4} + \sqrt{x}}\left(\frac{1}{2\sqrt{x - 4}} + \frac{1}{2\sqrt{x}}\right) =
+\]
+\[
+\frac{2}{\sqrt{x - 4} + \sqrt{x}}\left(\frac{1}{\sqrt{x - 4}} + \frac{1}{\sqrt{x}}\right) =
+\]
+\[
+\frac{2}{\sqrt{x - 4} + \sqrt{x}}\frac{\sqrt{x} + \sqrt{x - 4}}{\sqrt{x}\sqrt{x - 4}} = \frac{2}{\sqrt{x}\sqrt{x - 4}}
+\]
+
+\[
+y' = (4\ln{(\sqrt{x - 4} + \sqrt{x})})' + (\sqrt{x^{2} - 4x})' =
+\]
+\[
+\frac{2}{\sqrt{x}\sqrt{x - 4}} + \frac{x - 2}{\sqrt{x^{2} - 4x}} = \frac{2}{\sqrt{x^{2} - 4x}} + \frac{x - 2}{\sqrt{x^{2} - 4x}} = 
+\]
+\[
+\frac{2 + x - 2}{\sqrt{x^{2} - 4x}} = \frac{x}{\sqrt{x^{2} - 4x}}
+\]
 
 Result:
+\[
+y' = \frac{x}{\sqrt{x^{2} - 4x}}
+\]
 
 \end{document}
