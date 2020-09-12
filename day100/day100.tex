@@ -8,11 +8,44 @@
 
 Given:
 \[
-s = \frac{1}{4}\tan^{4}{t} - \frac{1}{2}\tan^{2}{t} - \ln{(\cos{t})
+s = \frac{1}{4}\tan^{4}{t} - \frac{1}{2}\tan^{2}{t} - \ln{(\cos{t})}
 \]
 
 Solution:
+\[
+(\frac{1}{4}\tan^{4}{t})' = \frac{1}{4}\cdot 4\tan^{3}{t}\frac{1}{\cos^{2}{t}} = \frac{\tan^{3}{t}}{\cos^{2}{t}} = \frac{\sin^{3}{t}}{\cos^{5}{t}}
+\]
+
+\[
+(\frac{1}{2}\tan^{2}{t})' = \frac{1}{2}\cdot 2\tan{t}\frac{1}{\cos^{2}{t}} = \frac{\tan{t}}{\cos^{2}{t}} = \frac{\sin{t}}{\cos^{3}{t}}
+\]
+
+\[
+(\ln{(\cos{t})})' = \frac{1}{\cos{t}}\cdot(-\sin{t}) = \frac{-\sin{t}}{\cos{t}}
+\]
+
+\[
+s' = \frac{\sin^{3}{t}}{\cos^{5}{t}} - \frac{\sin{t}}{\cos^{3}{t}} - (\frac{-\sin{t}}{\cos{t}}) =
+\]
+\[
+\frac{\sin^{3}{t}}{\cos^{5}{t}} - \frac{\sin{t}}{\cos^{3}{t}} + \frac{\sin{t}}{\cos{t}} =
+\]
+\[
+\frac{\sin^{3}{t} - \sin{t}\cos^{2}{t} + \sin{t}\cos^{4}{t}}{\cos^{5}{t}} = \frac{\sin^{3}{t} + \sin{t}\cos^{2}{t}(-1 + \cos^{2}{t})}{\cos^{5}{t}} =
+\]
+\[
+\frac{\sin^{3}{t} + \sin{t}\cos^{2}{t}(-\sin^{2}{t})}{\cos^{5}{t}} =
+\]
+\[
+\frac{\sin^{3}{t} - \sin^{3}{t}\cos^{2}{t}}{\cos^{5}{t}} = \frac{\sin^{3}{t}(1 - \cos^{2}{t})}{\cos^{5}{t}} =
+\]
+\[
+\frac{\sin^{3}{t}\sin^{2}{t}}{\cos^{5}{t}} = \frac{\sin^{5}{t}}{\cos^{5}{t}} = \tan^{5}{t}
+\]
 
 Result:
+\[
+s' = \tan^{5}{t}
+\]
 
 \end{document}
