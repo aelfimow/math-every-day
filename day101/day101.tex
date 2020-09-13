@@ -12,10 +12,33 @@ f(x) = (x^{2} + a^{2})\arctan{\frac{x}{a}} - ax
 \]
 
 Solution:
+\[
+f'(x) = 2x\arctan{\frac{x}{a}} + (x^{2} + a^{2})\frac{1}{1 + (\frac{x}{a})^{2}}\frac{1}{a} - a =
+\]
+\[
+2x\arctan{\frac{x}{a}} + \frac{x^{2} + a^{2}}{1 + \frac{x^{2}}{a^{2}}}\frac{1}{a} - a =
+\]
+\[
+2x\arctan{\frac{x}{a}} + \frac{x^{2} + a^{2}}{\frac{a^{2} + x^{2}}{a^{2}}}\frac{1}{a} - a =
+\]
+\[
+2x\arctan{\frac{x}{a}} + \frac{a^{2}(x^{2} + a^{2})}{a^{2} + x^{2}}\frac{1}{a} - a =
+\]
+\[
+2x\arctan{\frac{x}{a}} + \frac{a^{2}}{1}\frac{1}{a} - a = 2x\arctan{\frac{x}{a}} + a - a = 2x\arctan{\frac{x}{a}}
+\]
+
+\[
+f'(x) = 2x\arctan{\frac{x}{a}}
+\]
+
+\[
+f'(a) = 2a\arctan{\frac{a}{a}} = 2a\arctan{1} = 2a\frac{\pi}{4} = \frac{a\pi}{2}
+\]
 
 Result:
 \[
-f'(x) =
+f'(a) = \frac{a\pi}{2}
 \]
 
 \end{document}
