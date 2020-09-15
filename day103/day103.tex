@@ -10,11 +10,42 @@
 
 Given:
 \[
-f(x) = \euler^{-\frac{u}{a}}\cos{\frac{u}{a}}
+f(u) = \euler^{-\frac{u}{a}}\cos{\frac{u}{a}}
 \]
 
 Solution:
+\[
+\left(\euler^{-\frac{u}{a}}\right)' = -\frac{1}{a}\euler^{\frac{u}{a}}
+\]
+\[
+(\cos{\frac{u}{a}})' = (-\sin{\frac{u}{a}})\frac{1}{a} = -\frac{\sin{\frac{u}{a}}}{a}
+\]
+
+\[
+f'(u) = -\frac{1}{a}\euler^{\frac{u}{a}}\cos{\frac{u}{a}} + \euler^{-\frac{u}{a}}(-\frac{\sin{\frac{u}{a}}}{a}) =
+-\frac{1}{a}\euler^{\frac{u}{a}}(\cos{\frac{u}{a}} + \sin{\frac{u}{a}})
+\]
+
+\[
+f'(u) = -\frac{1}{a}\euler^{\frac{u}{a}}(\cos{\frac{u}{a}} + \sin{\frac{u}{a}})
+\]
+
+\[
+f(0) = \euler^{-\frac{0}{a}}\cos{\frac{0}{a}} = \euler^{0}\cos{0} = 1\cdot 1 = 1
+\]
+
+\[
+f'(0) = -\frac{1}{a}\euler^{\frac{0}{a}}(\cos{\frac{0}{a}} + \sin{\frac{0}{a}}) = -\frac{1}{a}\euler^{0}(\cos{0} + \sin{0}) =
+-\frac{1}{a}\cdot 1 \cdot(1 + 0) = -\frac{1}{a}
+\]
+
+\[
+f(0) + af'(0) = 1 + a\cdot\frac{-1}{a} = 1 + (-1) = 1 - 1 = 0
+\]
 
 Result:
+\[
+f(0) + af'(0) = 0
+\]
 
 \end{document}
