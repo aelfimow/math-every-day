@@ -2,7 +2,7 @@
 
 \usepackage[latin1]{inputenc}
 
-\newcommand*\d{\mathrm{d}}
+\newcommand*\deriv{\mathrm{d}}
 
 \begin{document}
 
@@ -13,9 +13,44 @@ Given:
 s = \frac{1}{t\ln{ct}}
 \]
 \[
-t\frac{\d s}{\d t} + s = -ts^{2}
+t\frac{\deriv s}{\deriv t} + s = -ts^{2}
 \]
 
 Solution:
+\[
+s = \frac{1}{t\ln{ct}} = (t\ln{ct})^{-1}
+\]
+
+\[
+\frac{\deriv s}{\deriv t} = -1(t\ln{ct})^{-1 - 1}(1\ln{ct} + t\frac{1}{t}) = -\frac{\ln{ct} + 1}{(t\ln{ct})^{2}}
+\]
+
+\[
+t\left(-\frac{\ln{ct} + 1}{(t\ln{ct})^{2}}\right) + \frac{1}{t\ln{ct}} = -t\left(\frac{1}{t\ln{ct}}\right)^{2}
+\]
+\[
+\frac{-t\ln{ct} - t}{(t\ln{ct})^{2}} + \frac{1}{t\ln{ct}} = \frac{-t}{(t\ln{ct})^{2}}
+\]
+\[
+\frac{-t\ln{ct} - t}{(t\ln{ct})^{2}} + \frac{1}{t\ln{ct}} + \frac{t}{(t\ln{ct})^{2}} = 0
+\]
+\[
+\frac{-t\ln{ct} - t}{(t\ln{ct})^{2}} + \frac{t}{(t\ln{ct})^{2}} + \frac{1}{t\ln{ct}}= 0
+\]
+\[
+\frac{-t\ln{ct} - t + t}{(t\ln{ct})^{2}} + \frac{1}{t\ln{ct}}= 0
+\]
+\[
+\frac{-t\ln{ct}}{(t\ln{ct})^{2}} + \frac{1}{t\ln{ct}}= 0
+\]
+\[
+\frac{-t\ln{ct} + t\ln{ct}}{(t\ln{ct})^{2}} = 0
+\]
+\[
+\frac{0}{(t\ln{ct})^{2}} = 0
+\]
+\[
+0 = 0
+\]
 
 \end{document}
