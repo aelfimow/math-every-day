@@ -11,12 +11,31 @@
 
 Given:
 \[
-x = \frac{t - 2\euler^{-t^{2}}{2t^{2}}
+x = \frac{t - \euler^{-t^{2}}}{2t^{2}}
 \]
 \[
 t\frac{\deriv x}{\deriv t} + 2x = \euler^{-t^{2}} + \frac{1}{2t}
 \]
 
 Solution:
+\[
+\frac{\deriv x}{\deriv t} = \frac{(1 - (-2t)\euler^{-t^{2}})2t^{2} - (t - \euler^{-t^{2}})\cdot 2\cdot 2t}{(2t^{2})^{2}} =
+\]
+\[
+\frac{2t^{2} - (-2t)2t^{2}\euler^{-t^{2}} - (4t^{2} - 4t\euler^{-t^{2}})}{4t^{4}} =
+\]
+\[
+\frac{2t^{2} + 4t^{3}\euler^{-t^{2}} - 4t^{2} + 4t\euler^{-t^{2}}}{4t^{4}} =
+\]
+\[
+\frac{\euler^{-t^{2}}(4t^{3} + 4t) - 2t^{2}}{4t^{4}} = \frac{2t(\euler^{-t^{2}}(2t^{2} + 2) - t)}{4t^{4}} =
+\]
+\[
+\frac{\euler^{-t^{2}}(2t^{2} + 2) - t}{2t^{3}}
+\]
+
+\[
+\frac{\deriv x}{\deriv t} = \frac{\euler^{-t^{2}}(2t^{2} + 2) - t}{2t^{3}}
+\]
 
 \end{document}
