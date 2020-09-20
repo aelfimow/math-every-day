@@ -37,8 +37,20 @@ s = t\euler^{-t}
 \]
 
 Solution:
+\[
+s' = \euler^{-t} + t(-1)\euler^{-t} = \euler^{-t}(1 - t)
+\]
+\[
+s'' = (-1)\euler^{-t}(1 - t) + \euler^{-t}(-1) = \euler^{-t}((-1)(1 - t) + (-1)) = \euler^{-t}(-1 + t - 1) = \euler^{-t}(t - 2)
+\]
+\[
+s''' = (-1)\euler^{-t}(t - 2) + \euler^{-t} = \euler^{-t}((-1)(t - 2) + 1) = \euler^{-t}(-t + 2 + 1) = \euler^{-t}(3 - t)
+\]
 
 Result:
+\[
+s''' = \euler^{-t}(3 - t)
+\]
 
 \section{Exercise 1023c}
 
@@ -48,7 +60,35 @@ y = \arctan{\frac{x}{a}}
 \]
 
 Solution:
+\[
+y' = \frac{\frac{1}{a}}{1 + \left(\frac{x}{a}\right)^{2}} = \frac{\frac{1}{a}}{1 + \frac{x^{2}}{a^{2}}} =
+\frac{\frac{1}{a}}{\frac{a^{2} + x^{2}}{a^{2}}} =
+\]
+\[
+\frac{\frac{1}{a}a^{2}}{a^{2} + x^{2}} = \frac{a}{a^{2} + x^{2}}
+\]
+
+Result 1: $y' = \frac{a}{a^{2} + x^{2}}$\\
+
+\[
+y'' = \frac{0(a^{2} + x^{2}) - a2x}{(a^{2} + x^{2})^{2}} = \frac{-2ax}{(a^{2} + x^{2})^{2}}
+\]
+
+Result 2: $y'' = \frac{-2ax}{(a^{2} + x^{2})^{2}}$\\
+
+\[
+y''' = \frac{-2a(a^{2} + x^{2})^{2} - (-2ax)2(a^{2} + x^{2})2x}{(a^{2} + x^{2})^{4}} =
+\]
+\[
+\frac{(a^{2} + x^{2})(-2a(a^{2} + x^{2}) + 8ax^{2})}{(a^{2} + x^{2})^{4}} = \frac{-2a^{3} - 2ax^{2} + 8ax^{2}}{(a^{2} + x^{2})^{3}} =
+\]
+\[
+\frac{-2a^{3} + 6ax^{2}}{(a^{2} + x^{2})^{3}} = \frac{2a(3x^{2} - a^{2})}{(a^{2} + x^{2})^{3}}
+\]
 
 Result:
+\[
+y''' = \frac{2a(3x^{2} - a^{2})}{(a^{2} + x^{2})^{3}}
+\]
 
 \end{document}
