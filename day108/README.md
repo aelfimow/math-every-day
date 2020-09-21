@@ -1,2 +1,2 @@
 # Day 108
-Exercise 1022 from [Book 2](../Book2.md).
+Exercise 1023 from [Book 2](../Book2.md).
