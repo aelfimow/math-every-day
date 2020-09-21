@@ -14,7 +14,57 @@ s = \frac{t}{2}\sqrt{2 - t^{2}} + \arcsin{\frac{t}{\sqrt{2}}}
 \]
 
 Solution:
+\[
+\frac{\deriv s}{\deriv t} = \frac{1}{2}(\sqrt{2 - t^{2}} + t\frac{1}{2\sqrt{2 - t^{2}}}(-2t)) + \frac{1}{\sqrt{2}}\frac{1}{\sqrt{1 - (\frac{t}{\sqrt{2}})^{2}}}
+\]
+\[
+\frac{\deriv s}{\deriv t} = \frac{1}{2}(\sqrt{2 - t^{2}} - \frac{t^{2}}{\sqrt{2 - t^{2}}}) + \frac{1}{\sqrt{2 - t^{2}}}
+\]
+\[
+\frac{\deriv s}{\deriv t} = \frac{1}{2}(\frac{\sqrt{2 - t^{2}}\sqrt{2 - t^{2}} - t^{2}}{\sqrt{2 - t^{2}}}) + \frac{1}{\sqrt{2 - t^{2}}}
+\]
+\[
+\frac{\deriv s}{\deriv t} = \frac{1}{2}(\frac{2 - t^{2} - t^{2}}{\sqrt{2 - t^{2}}}) + \frac{1}{\sqrt{2 - t^{2}}}
+\]
+\[
+\frac{\deriv s}{\deriv t} = \frac{1}{2}(\frac{2 - 2t^{2}}{\sqrt{2 - t^{2}}}) + \frac{1}{\sqrt{2 - t^{2}}}
+\]
+\[
+\frac{\deriv s}{\deriv t} = \frac{1 - t^{2}}{\sqrt{2 - t^{2}}} + \frac{1}{\sqrt{2 - t^{2}}}
+\]
+\[
+\frac{\deriv s}{\deriv t} = \frac{1 - t^{2} + 1}{\sqrt{2 - t^{2}}} = \frac{2 - t^{2}}{\sqrt{2 - t^{2}}}
+\]
+\[
+\frac{\deriv s}{\deriv t} = \sqrt{2 - t^{2}}
+\]
+
+\[
+\frac{\deriv^{2} s}{\deriv t^{2}} = \frac{1}{2\sqrt{2 - t^{2}}}(-2t) = -\frac{t}{\sqrt{2 - t^{2}}}
+\]
+
+\[
+\frac{\deriv^{3} s}{\deriv t^{3}} = -\left(\frac{\sqrt{2 - t^{2}} - t\frac{-2t}{2\sqrt{2 - t^{2}}}}{(\sqrt{2 - t^{2}})^{2}}\right)
+\]
+\[
+\frac{\deriv^{3} s}{\deriv t^{3}} = -\left(\frac{\sqrt{2 - t^{2}} + \frac{t^{2}}{\sqrt{2 - t^{2}}}}{2 - t^{2}}\right)
+\]
+\[
+\frac{\deriv^{3} s}{\deriv t^{3}} = -\left(\frac{\sqrt{2 - t^{2}}\sqrt{2 - t^{2}} + t^{2}}{(2 - t^{2})\sqrt{2 - t^{2}}}\right)
+\]
+\[
+\frac{\deriv^{3} s}{\deriv t^{3}} = -\left(\frac{2 - t^{2} + t^{2}}{(2 - t^{2})^\frac{3}{2}}\right)
+\]
+\[
+\frac{\deriv^{3} s}{\deriv t^{3}} = -\left(\frac{2}{(2 - t^{2})^\frac{3}{2}}\right)
+\]
+\[
+\frac{\deriv^{3} s}{\deriv t^{3}} = -\frac{2}{(2 - t^{2})^\frac{3}{2}}
+\]
 
 Result:
+\[
+\frac{\deriv^{3} s}{\deriv t^{3}} = -\frac{2}{(2 - t^{2})^\frac{3}{2}}
+\]
 
 \end{document}
