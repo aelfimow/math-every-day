@@ -2,6 +2,8 @@
 
 \usepackage[latin1]{inputenc}
 
+\newcommand*\euler{\mathrm{e}}
+
 \begin{document}
 
 \section{Exercise 1049}
@@ -12,7 +14,56 @@ Given:
 \]
 
 Solution:
+\[
+(xy)'\euler^{xy} - 2x + 3y^{2}y' = 0
+\]
+\[
+(y + xy')\euler^{xy} - 2x + 3y^{2}y' = 0
+\]
+\[
+y\euler^{xy} + xy'\euler^{xy} - 2x + 3y^{2}y' = 0
+\]
+\[
+y\euler^{xy} + y'(x\euler^{xy} + 3y^{2}) - 2x = 0
+\]
+\[
+y'(x\euler^{xy} + 3y^{2}) = 2x - y\euler^{xy}
+\]
+\[
+y' = \frac{2x - y\euler^{xy}}{x\euler^{xy} + 3y^{2}}
+\]
+
+\[
+y'(0) = \frac{2\cdot 0 - y(0)\euler^{0\cdot y(0)}}{0\euler^{0\cdot y(0)} + 3y(0)^{2}}
+\]
+\[
+y'(0) = \frac{-y(0)}{3y(0)^{2}}
+\]
+
+Computing $y(0)$:
+\[
+\euler^{xy} - x^{2} + y^{3} = 0
+\]
+\[
+\euler^{0\cdot y(0)} - 0^{2} + y(0)^{3} = 0
+\]
+\[
+1 + y(0)^{3} = 0
+\]
+\[
+y(0)^{3} = -1
+\]
+\[
+y(0) = \sqrt[3]{-1} = -1
+\]
+
+\[
+y'(0) = \frac{-1}{3y(0)} = \frac{-1}{3\cdot(-1)} = \frac{1}{3}
+\]
 
 Result:
+\[
+y'(0) = \frac{1}{3}
+\]
 
 \end{document}
